@@ -1,8 +1,9 @@
 [JAVA8]
 ### Null 대신 optional
 
-##### 1.	값이 없는 상황을 처리 하는 방법  
+##### 1. 값이 없는 상황을 처리 하는 방법  
 - null값 체크해서 NullPointerException  
+
 ```  
 public class Main {
 	 
@@ -113,8 +114,8 @@ public class Main {
 - null과 Optional.empty() 
  `null`을 참조하면 NullPointerException이 발생하지만,  
  `Optional.empty()`는 Optional의 객체이므로 Car형식일때 Optional<Car>로 바뀐다. => 값이 없을 수 있음을 명시적으로 표현한다.  
- 
- ```  
+   
+ ```    
   /**
 	 * 사람이 차를 소유했을 수도 없을수도 있으므로
 	 * Optional로 정의함
