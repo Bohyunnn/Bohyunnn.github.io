@@ -3,7 +3,7 @@
 
 ##### 1.	값이 없는 상황을 처리 하는 방법  
 - null값 체크해서 NullPointerException  
-```
+```  
 public class Main {
 	 
 	public static void main(String[] args) {
@@ -84,7 +84,7 @@ public class Main {
 }
 
 
-```
+```  
   
 ##### 2. null 때문에 발생하는 문제
  - 에러의 근원이다  
@@ -114,7 +114,7 @@ public class Main {
  `null`을 참조하면 NullPointerException이 발생하지만,  
  `Optional.empty()`는 Optional의 객체이므로 Car형식일때 Optional<Car>로 바뀐다. => 값이 없을 수 있음을 명시적으로 표현한다.  
  
- ```
+ ```  
   /**
 	 * 사람이 차를 소유했을 수도 없을수도 있으므로
 	 * Optional로 정의함
@@ -139,7 +139,7 @@ public class Main {
 		private String name;
 		public String getName() {return name;}
 	}
- ```
+ ```  
  
  -> 메서드 시그너처만 보고 `선택형 값`인지 아닌지 파악이 가능하다.  
  
